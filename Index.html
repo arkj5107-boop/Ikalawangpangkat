@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173c35">
+  <meta name="description" content="An interactive story exploring Filipino identity, American influence, language, education, and cultural resilience.">
+
+  <title>Between Two Worlds | A Filipino-American Story</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- READING PROGRESS -->
+  <div class="progress-track">
+    <span id="readingProgress"></span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="top">
+
+    <a class="brand" href="#top" aria-label="Between Two Worlds home">
+      <span class="brand-mark">✦</span>
+
+      <span>
+        <b>BETWEEN TWO WORLDS</b>
+        <small>Isang Kuwento ng Wika at Pagkakakilanlan</small>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="mainNav">
+      <a href="#story">The Story</a>
+      <a href="#chapters">Chapters</a>
+      <a href="#culture">Culture Lab</a>
+      <a href="#reflection">Reflection</a>
+
+      <button class="nav-cta" id="languageToggle">
+        Filipino mode <span>↗</span>
+      </button>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          <span></span>
+          A DIGITAL CULTURAL EXHIBIT · 1898—TODAY
+        </p>
+
+        <h1>
+          Two cultures.<br>
+          <em>One evolving</em><br>
+          identity.
+        </h1>
+
+        <p class="hero-copy en-copy">
+          Explore how American influence changed education,
+          language, and everyday life in the Philippines—and
+          how Filipino communities continued to protect the
+          heart of their own culture.
+        </p>
+
+        <p class="hero-copy fil-copy hidden">
+          Tuklasin kung paano binago ng impluwensiyang Amerikano
+          ang edukasyon, wika, at pang-araw-araw na buhay sa
+          Pilipinas—at kung paano patuloy na pinangangalagaan
+          ng mga Pilipino ang sariling kultura.
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="button button-light" href="#story">
+            Begin the journey <span>↓</span>
+          </a>
+
+          <a class="text-link" href="#chapters">
+            Explore the chapters <span>↗</span>
+          </a>
+
+        </div>
+
+        <div class="hero-note">
+          <span class="note-line"></span>
+
+          <span>
+            History is not just what happened.<br>
+            It is what we choose to carry forward.
+          </span>
+        </div>
+
+      </div>
+
+      <!-- CSS-DRAWN CULTURAL ILLUSTRATION -->
+      <div
+        class="hero-art"
+        aria-label="Illustration representing Filipino and American cultural influences">
+
+        <div class="sun-disc"></div>
+        <div class="sun-ray ray-one"></div>
+        <div class="sun-ray ray-two"></div>
+
+        <div class="arch arch-back"></div>
+        <div class="arch arch-front"></div>
+
+        <div class="building">
+          <div class="roof"></div>
+
+          <div class="columns">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <div class="building-base"></div>
+        </div>
+
+        <div class="hill hill-one"></div>
+        <div class="hill hill-two"></div>
+
+        <div class="flag flag-ph">
+          <span>☀</span>
+          <i></i>
+        </div>
+
+        <div class="flag flag-us">
+          <i></i>
+        </div>
+
+        <div class="art-caption">
+          <span class="caption-dot"></span>
+          PAST MEETS PRESENT
+          <span class="caption-rule"></span>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL TO DISCOVER</span>
+        <span class="scroll-line"></span>
+        <span>01 / 04</span>
+      </div>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="intro section-wrap" id="story">
+
+      <div class="section-label">
+        <span>01</span>
+        THE BIG PICTURE
+      </div>
+
+      <div class="intro-grid">
+
+        <div>
+          <h2>
+            History leaves<br>
+            more than <em>footprints.</em>
+          </h2>
+        </div>
+
+        <div class="intro-text">
+
+          <p class="en-copy">
+            It leaves words in our vocabulary, traditions in our
+            homes, and questions about who we are. During the
+            American colonial period, public education expanded
+            and English became a major language of instruction.
+            These changes opened doors—but also reshaped the
+            place of Filipino languages and cultural practices.
+          </p>
+
+          <p class="fil-copy hidden">
+            Nag-iiwan ang kasaysayan ng mga salita sa ating
+            bokabularyo, tradisyon sa tahanan, at mga tanong
+            tungkol sa ating pagkatao. Sa panahon ng pananakop
+            ng mga Amerikano, lumawak ang pampublikong edukasyon
+            at naging pangunahing wikang panturo ang Ingles.
+            Nagbukas ito ng mga oportunidad, ngunit binago rin
+            ang puwesto ng mga katutubong wika at kaugalian.
+          </p>
+
+          <div class="fact-strip">
+
+            <div>
+              <strong>1898</strong>
+              <span>
+                U.S. rule begins after the Spanish-American War
+              </span>
+            </div>
+
+            <div>
+              <strong>1901</strong>
+              <span>
+                Public school system expands under American rule
+              </span>
+            </div>
+
+            <div>
+              <strong>Today</strong>
+              <span>
+                Filipino identity continues to evolve
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- THREE HISTORICAL CHAPTERS -->
+    <section class="chapters-section" id="chapters">
+
+      <div class="section-wrap">
+
+        <div class="section-heading">
+
+          <div>
+            <div class="section-label light-label">
+              <span>02</span>
+              THREE CHAPTERS
+            </div>
+
+            <h2>
+              One history,<br>
+              <em>many experiences.</em>
+            </h2>
+          </div>
+
+          <p>
+            Move through three places and perspectives.
+            Each chapter reveals a different side of cultural
+            change—and the resilience that followed.
+          </p>
+
+        </div>
+
+        <div class="chapter-grid">
+
+          <!-- CHAPTER 1: MANILA -->
+          <article class="chapter-card chapter-manila">
+
+            <div class="chapter-number">
+              CHAPTER 01 <span>↗</span>
+            </div>
+
+            <div class="chapter-illustration manila-illustration">
+
+              <div class="sun"></div>
+
+              <div class="school-building">
+                <div class="school-roof"></div>
+                <div class="school-floor"></div>
+
+                <div class="school-windows">
+                  ▥ ▥ ▥
+                </div>
+              </div>
+
+              <div class="palm palm-a"></div>
+              <div class="palm palm-b"></div>
+
+            </div>
+
+            <div class="chapter-body">
+
+              <p class="chapter-location">
+                MANILA · EDUCATION
+              </p>
+
+              <h3>
+                A classroom<br>
+                of new possibilities
+              </h3>
+
+              <p class="en-copy">
+                English entered classrooms as a language of
+                instruction. Education offered new opportunities,
+                while raising questions about whose knowledge
+                and language were centered.
+              </p>
+
+              <p class="fil-copy hidden">
+                Pumasok ang Ingles sa mga silid-aralan bilang
+                wikang panturo. Nagbigay ng bagong oportunidad
+                ang edukasyon, ngunit nagbukas din ito ng tanong
+                kung kaninong kaalaman at wika ang binibigyang-halaga.
+              </p>
+
+              <button class="chapter-link" data-chapter="manila">
+                Open chapter <span>↗</span>
+              </button>
+
+            </div>
+          </article>
+
+          <!-- CHAPTER 2: MINDANAO -->
+          <article class="chapter-card chapter-mindanao">
+
+            <div class="chapter-number">
+              CHAPTER 02 <span>↗</span>
+            </div>
+
+            <div class="chapter-illustration mindanao-illustration">
+
+              <div class="mountain m-a"></div>
+              <div class="mountain m-b"></div>
+
+              <div class="mosque">
+                <div class="dome"></div>
+                <div class="minaret"></div>
+                <div class="mosque-base"></div>
+              </div>
+
+              <div class="water"></div>
+
+            </div>
+
+            <div class="chapter-body">
+
+              <p class="chapter-location">
+                MINDANAO · LANGUAGE
+              </p>
+
+              <h3>
+                More than<br>
+                one way to speak
+              </h3>
+
+              <p class="en-copy">
+                In a region rich with languages and traditions,
+                English could help people connect to wider
+                systems—but it could also make local languages
+                feel less valued.
+              </p>
+
+              <p class="fil-copy hidden">
+                Sa rehiyong mayaman sa wika at tradisyon,
+                nakatulong ang Ingles upang makaugnay sa mas
+                malawak na sistema. Gayunman, maaari rin nitong
+                mapababa ang pagpapahalaga sa mga lokal na wika.
+              </p>
+
+              <button class="chapter-link" data-chapter="mindanao">
+                Open chapter <span>↗</span>
+              </button>
+
+            </div>
+          </article>
+
+          <!-- CHAPTER 3: VISAYAS -->
+          <article class="chapter-card chapter-visayas">
+
+            <div class="chapter-number">
+              CHAPTER 03 <span>↗</span>
+            </div>
+
+            <div class="chapter-illustration visayas-illustration">
+
+              <div class="sea-sun"></div>
+
+              <div class="island island-a"></div>
+              <div class="island island-b"></div>
+
+              <div class="boat">
+                <span></span>
+              </div>
+
+              <div class="woven woven-one"></div>
+
+            </div>
+
+            <div class="chapter-body">
+
+              <p class="chapter-location">
+                VISAYAS · IDENTITY
+              </p>
+
+              <h3>
+                Tradition in<br>
+                a changing world
+              </h3>
+
+              <p class="en-copy">
+                Clothing, music, beliefs, and daily customs
+                changed through cultural contact. Yet communities
+                kept adapting, preserving and reimagining what
+                mattered to them.
+              </p>
+
+              <p class="fil-copy hidden">
+                Nagbago ang pananamit, musika, paniniwala, at
+                kaugalian dahil sa ugnayang pangkultura.
+                Gayunman, patuloy na umangkop ang mga pamayanan
+                habang pinangangalagaan ang mahahalagang tradisyon.
+              </p>
+
+              <button class="chapter-link" data-chapter="visayas">
+                Open chapter <span>↗</span>
+              </button>
+
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section">
+
+      <div class="quote-ornament">“</div>
+
+      <blockquote>
+        We can learn from another culture<br>
+        without <em>forgetting our own.</em>
+      </blockquote>
+
+      <p>
+        ISANG PAALALA SA BAWAT HENERASYON
+      </p>
+
+    </section>
+
+    <!-- CULTURE LAB -->
+    <section class="culture-section section-wrap" id="culture">
+
+      <div class="section-label">
+        <span>03</span>
+        CULTURE LAB
+      </div>
+
+      <div class="culture-heading">
+
+        <h2>
+          Influence is not<br>
+          the same as <em>erasure.</em>
+        </h2>
+
+        <p>
+          Culture is alive. It absorbs, resists, adapts, and grows.
+          Explore how Filipino and American influences can meet
+          in everyday life.
+        </p>
+
+      </div>
+
+      <div class="culture-tabs" role="tablist" aria-label="Cultural topics">
+
+        <button class="culture-tab active" data-topic="language" role="tab">
+          Language
+        </button>
+
+        <button class="culture-tab" data-topic="education" role="tab">
+          Education
+        </button>
+
+        <button class="culture-tab" data-topic="tradition" role="tab">
+          Tradition
+        </button>
+
+        <button class="culture-tab" data-topic="media" role="tab">
+          Media &amp; daily life
+        </button>
+
+      </div>
+
+      <div class="culture-panel">
+
+        <div class="culture-symbol" id="cultureSymbol">
+          Aa
+        </div>
+
+        <div class="culture-copy">
+
+          <p class="mini-label" id="cultureEyebrow">
+            WORDS THAT TRAVEL
+          </p>
+
+          <h3 id="cultureTitle">
+            Language can connect us.
+          </h3>
+
+          <p id="cultureDescription">
+            English became influential in education, government,
+            and media. Filipino and regional languages, however,
+            remain essential to belonging, memory, humor, and
+            community. Being multilingual can be a bridge—not
+            a reason to rank one language above another.
+          </p>
+
+          <div class="word-pills" id="culturePills">
+            <span>code-switching</span>
+            <span>mother tongue</span>
+            <span>identity</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="culture-footnote">
+
+        <span class="tiny-star">✳</span>
+
+        <p>
+          <b>Think about it:</b>
+          Which words, songs, foods, or habits in your life
+          carry more than one cultural influence?
+        </p>
+
+      </div>
+    </section>
+
+    <!-- REFLECTION JOURNAL -->
+    <section class="reflection-section" id="reflection">
+
+      <div class="reflection-decoration">✳</div>
+
+      <div class="section-wrap reflection-grid">
+
+        <div>
+
+          <div class="section-label light-label">
+            <span>04</span>
+            YOUR TURN
+          </div>
+
+          <h2>
+            What will you<br>
+            <em>carry forward?</em>
+          </h2>
+
+          <p>
+            History becomes meaningful when we connect it to
+            the choices we make today. Take a moment to reflect.
+          </p>
+
+        </div>
+
+        <div class="reflection-card">
+
+          <div class="reflection-top">
+            <span>REFLECTION JOURNAL</span>
+            <span id="wordCount">0 words</span>
+          </div>
+
+          <label for="reflectionInput">
+            Complete the thought in your own words:
+          </label>
+
+          <p class="prompt">
+            “I can appreciate other cultures while protecting
+            my own by…”
+          </p>
+
+          <textarea
+            id="reflectionInput"
+            placeholder="Write your reflection here…"></textarea>
+
+          <div class="reflection-actions">
+
+            <button class="button button-green" id="saveReflection">
+              Save on this page <span>✓</span>
+            </button>
+
+            <button class="subtle-button" id="clearReflection">
+              Clear
+            </button>
+
+          </div>
+
+          <p class="save-status" id="saveStatus" aria-live="polite">
+            Your writing stays in this page while it is open.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING SECTION -->
+    <section class="final-section section-wrap">
+
+      <p class="eyebrow dark-eyebrow">
+        <span></span>
+        THE STORY CONTINUES
+      </p>
+
+      <h2>
+        Rooted in our past.<br>
+        <em>Open to the world.</em>
+      </h2>
+
+      <p>
+        Filipino identity is not a museum piece. It is a living
+        story—written by every generation that chooses to
+        remember, question, and create.
+      </p>
+
+      <a href="#top" class="button button-dark">
+        Return to the beginning ↑
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <a class="footer-brand" href="#top">
+      ✦ BETWEEN TWO WORLDS
+    </a>
+
+    <p>
+      Made for learning, reflection, and cultural appreciation.
+    </p>
+
+    <span>
+      © <span id="year"></span>
+      · WIKA · KASAYSAYAN · PAGKAKAKILANLAN
+    </span>
+
+  </footer>
+
+  <!-- CHAPTER POP-UP -->
+  <div class="modal-backdrop" id="chapterModal" aria-hidden="true">
+
+    <div
+      class="chapter-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+        aria-label="Close chapter">
+        ×
+      </button>
+
+      <p class="mini-label" id="modalEyebrow">
+        CHAPTER
+      </p>
+
+      <h2 id="modalTitle">
+        A classroom of new possibilities
+      </h2>
+
+      <p id="modalText"></p>
+
+      <div class="modal-question">
+
+        <span>✳</span>
+
+        <p id="modalQuestion"></p>
+
+      </div>
+
+      <button class="button button-green" id="modalDone">
+        Continue exploring <span>→</span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
